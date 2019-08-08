@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.player.DialogAlarmFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Alarm"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Nhập thời gian hẹn tắt"
+        android:id="@+id/edt_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>

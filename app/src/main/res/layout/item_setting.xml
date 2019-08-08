@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="?attr/actionBarSize">
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_margin="@dimen/_8sdp"
+            android:textSize="@dimen/_15ssp"
+            android:gravity="center|left"
+            android:text="hiihih"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

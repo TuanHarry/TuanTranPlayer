@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TTPlayer</string>
+    <string name="we_need_permissions_to_download">We need permissions to download and save file.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="rationale_location_contacts">This app needs access to your location and contacts to know where and who you are.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \n\nCamera: %s
+        \nLocation &amp; Contacts: %s
+        \nSMS: %s
+    </string>
+    <string name="playing_from">Playing from</string>
+    <string name="default_time">00:00</string>
+    <string name="we_need_permissions_to_read_storage">We need permissions to read storage</string>
+    <string name="playlist">Playlist</string>
+    <string name="clouds">Clouds</string>
+    <string name="library">Library</string>
+    <string name="songs">Songs</string>
+    <string name="search_song">Search song</string>
+    <string name="settings">Settings</string>
+    <string name="wifi_transfer">Wifi Transfer</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="create_playlist">+ Create Playlist</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewmore">Xem thêm</string>
+    <string name="title_topic"><![CDATA[chủ đề & thể loại]]></string>
+    <string name="stlibrary">Thư viện</string>
+    <string name="channel_name">lol</string>
+    <string name="channel_description">sv</string>
+    <string name="cd_play">1</string>
+    <string name="cd_next">2</string>
+
+</resources>

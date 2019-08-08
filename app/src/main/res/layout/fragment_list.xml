@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinator"
+    android:layout_height="match_parent"
+    tools:context=".ui.Online.playlistonline.ListFragment">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="33dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:id="@+id/collasingtoolbar"
+            app:expandedTitleTextAppearance="@style/BarTheme"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:background="@drawable/backgroundbanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarlistsong"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:elevation="6dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/imagelistsong"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_anchor="@id/appbarlayout"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:layout_anchorGravity="bottom|center"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_app"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvc_listsong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Offline.local.HomeFragment"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:id="@+id/linearHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stlibrary"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewlib"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:text="Playlist gần đây"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/rvc_current_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</ScrollView>

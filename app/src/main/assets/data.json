@@ -1,0 +1,26 @@
+[
+    {
+        "type":2,
+        "title":"Thư viện",
+        "icon":"",
+        "image":""
+    },
+    {
+        "type":3,
+        "title":"Bài hát",
+        "icon":"",
+        "image":"ic_song"
+    },
+    {
+        "type":3,
+        "title":"Playlists",
+        "icon":"",
+        "image":"ic_playlist"
+    },
+    {
+        "type":3,
+        "title":"Nhạc yêu thích",
+        "icon":"",
+        "image":"ic_playlistfavorite"
+    }
+]
